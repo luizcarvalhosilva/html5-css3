@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>A imagem abaixo muda e adapta-se de acordo com o tamanho da aba. Olha só.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/source-300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/source-700.png" type="image/png">
+        <img src="images/source-1000.png" alt="Flexible image">
+    </picture>
+</body>
+</html>

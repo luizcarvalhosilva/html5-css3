@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgba(151, 68, 68, 0.486);
+        }
+
+        .especial::before {
+            content: '⇨ ';
+        }
+        .especial::after {
+            content: ' ⇦';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://codepen.io/" class="especial" target="_blank" rel="external">CodePen</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external">Youtube</a></li>
+        <li><a href="https://www.w3schools.com/" class="especial" target="_blank" rel="external">w3schools</a></li>
+        <li><a href="https://jsfiddle.net/" target="_blank" rel="external">JSfiddle</a></li>
+        <li><a href="https://www.w3resource.com/index.php" target="_blank" rel="external">w3resource</a></li>
+    </ul>
+</body>
+</html>

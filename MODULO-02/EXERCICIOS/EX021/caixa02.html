@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(126, 184, 126);
+            margin: 0%;
+        }
+
+        header {
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 5px;
+            border: 1px solid black;
+            box-shadow: 5px 3px 7px 1px #0000008f;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: black;
+            margin: auto;
+            padding: 6px 9.73px 6px 9.72px;
+            border-right: 1px solid black;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: #7CC4A5;
+        }
+
+        section {
+            margin: 7px;
+        }
+
+        article > aside {
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        aside > p {
+            display: inline;
+            background-color: lightgray;
+            padding: 6px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article > p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Música</a>
+            <a href="#">Esportes</a>
+            <a href="#">Filosofia</a>
+            <a href="#">Acontece no Mundo</a>
+            <a href="#">História global</a>
+            <a href="#">Economia</a>
+            <a href="#">Fato ou Fake?</a>
+            <a href="#">Comédia</a>
+            <a href="#">Tendências</a>
+            <a href="#">Inovações</a>
+            <a href="#">Carreiras</a>
+            <a href="#">Culinária</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>A Morte da Bezerra</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quas consequatur nihil dolorum, et cum voluptate labore ipsa porro suscipit iure mollitia ab amet facere repudiandae, nostrum perspiciatis rem totam?</p>
+                <aside>
+                    <p>Artigo escrito por Fulano Mendes</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Luiz.</p>
+    </footer>
+</body>
+</html>

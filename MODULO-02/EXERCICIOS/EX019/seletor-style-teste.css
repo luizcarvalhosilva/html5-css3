@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    margin-top: 15%;
+}
+
+.destaque {
+    background-color: #53b16fb7;
+    font-style: italic;
+}
+
+#maior {
+    font-size: 2em;
+    font-style: normal;
+    color:blue
+}
+
+#color-change {
+    color: brown;
+}

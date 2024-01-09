@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: "Android";
+    src: url("fontes/idroid.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #2685b5ff; /*blue-ncs*/
+    --cor1: #045b87ff; /*lapis-lazuli*/ 
+    --cor2: #134c69ff; /*indigo-dye*/
+    --cor3: #264352ff; /*charcoal*/
+    --cor4: #264f63ff; /*charcoal-2*/
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: "Android", sans-serif;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+}
+
+#firstTittle {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.591);
+}
+
+#upper-paragraph {
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.591);
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+}
+
+.headTittle {
+    font-family: "Android", Arial, sans-serif;
+    font-weight: normal;
+    color: #125366;
+    padding-left: 20px;
+}
+
+header {
+    font-family: var(--fonte-destaque);
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor3));
+    text-align: center;
+    padding-top: 30px;
+    min-height: 150px;
+}
+
+nav {
+    text-align: left;
+    padding: 10px;
+    box-shadow: 0px 7px 11px rgba(0, 0, 0, 0.269);
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 1s;
+}
+
+nav > a:hover {
+    border: 1px solid black;
+    background-color: var(--cor4);
+    color: var(--cor0);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 22px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.363);
+}
+
+main h1 {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-weight: normal;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.3em;
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-indent: 20px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.smaller {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+h3 {
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div.video {
+    background-color: var(--cor2);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.external-Link {
+    background-color: var(--cor0);
+    color: var(--cor4);
+    text-decoration: none;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.external-Link::after {
+    content: " 🔗";
+}
+
+.external-Link:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+mark {
+    background-color: unset;
+    color: var(--cor2);
+    font-weight: bold;
+    padding: 2px 1px;
+}
+
+/* li::before {
+    content: "✔ ";
+} essa é uma das formas de fazer o sinal de check.
+*/
+article {
+    background-color: var(--cor0);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.58);
+}
+
+article ul {
+    list-style-type: "\2714\00A0\00A0"; /*NEM TODOS OS NAVEGADORES SUPORTAM ISSO.*/
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1)
+}

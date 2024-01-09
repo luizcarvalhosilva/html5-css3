@@ -1,0 +1,41 @@
+@charset "UTF-8";
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #8AA6A3, #4C5958);
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #127369;
+    width: 600px;
+    padding: 10px; 
+    margin: auto;
+}
+
+h1 {
+    color: #10403B;
+    text-align: center;
+    text-shadow: 2px 2px 0px #29988d76;
+}
+
+h2 {
+    color: #127369
+}
+
+p {
+    text-align: justify;
+}
+
+
+
+
+/* Color Theme Swatches in Hex */
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-hex { color: #127369; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-2-hex { color: #10403B; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-3-hex { color: #8AA6A3; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-4-hex { color: #4C5958; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-5-hex { color: #BFBFBF; }
