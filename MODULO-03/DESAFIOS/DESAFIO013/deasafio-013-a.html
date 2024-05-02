@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO 13 A</title>
+    <style>
+        table {
+            text-align: center;
+        }
+
+        td {
+            width: 45px;
+            border: 1px solid black;  
+            padding: 12px;
+            transition: background-color 1.5s ease;
+        }
+        td:hover {
+            background-color: rgba(0, 200, 255, 0.404);
+        }
+        td.long:hover {
+            background-color: rgb(195, 28, 28);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td class="long" rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                
+            </tr>
+            <tr>
+                <td class="long" colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td class="long" rowspan="2">10</td>
+                <td class="long" colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
