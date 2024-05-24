@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        col.col_Nome {
+            background-color: chartreuse;
+        }
+
+        col.col_Idade {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+            <col class="col_Nome">
+            <col class="col_Sexo">
+            <col class="col_Idade" span="2">
+        </colgroup>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Carla</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Joana</td>
+            <td>F</td>
+            <td>27</td>
+            <td>Arquiteta</td>
+        </tr>
+        <tr>
+            <td>Josefa</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Motorista</td>
+        </tr>
+        <tr>
+            <td>Mario</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Barbeiro</td>
+        </tr>
+    </table>
+</body>
+</html>
